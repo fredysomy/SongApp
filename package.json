@@ -4,18 +4,22 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android --deviceId 192.168.1.5:5555",
+    "androidem": "react-native run-android --deviceId emulator-5554",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/slider": "^3.0.3",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.0.3",
+    "moment": "^2.29.1",
     "react": "17.0.1",
     "react-native": "0.64.2",
     "react-native-safe-area-context": "^3.3.0",
-    "react-native-screens": "^3.5.0"
+    "react-native-screens": "^3.5.0",
+    "react-native-track-player": "^1.2.7"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

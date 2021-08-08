@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator ,DefaultTheme} from '@react-navigation/native-stack';
 import { View ,Text} from 'react-native';
 import MainScreen from './components/MainScreen';
+import PlayerScreen from './components/PlayerScreen';
 export default function App() {
   const MyTheme = {
     
@@ -15,8 +16,9 @@ export default function App() {
 
   return (
     <NavigationContainer theme={MyTheme}>
-      <Stack.Navigator>
-        <Stack.Screen name="Songs" component={MainScreen} />
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Search Songs" component={MainScreen} />
+        <Stack.Screen name="Player" component={PlayerScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
